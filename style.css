@@ -248,12 +248,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 120px;
+    overflow: hidden;
 }
 
 .offer-logo {
-    max-height: 50px;
-    max-width: 150px;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.5);
+    transform-origin: center;
     object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
 .offer-badge {
